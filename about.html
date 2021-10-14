@@ -1,6 +1,62 @@
-{% extends "layout.html"%}
-{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parallel Lines & Madhubani </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="static/assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="static/assets/css/main.css" rel="stylesheet">
+    <!--photo album-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+  </head>
+  <body>
+    <div class="main-container">
+    <div id="head" class="row container-fluid  border-bottom border-3 border-danger ">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6" >
+        <!-- <div class="pt-4" ><h4> Parallel Lines & <strong>Madhubani</strong></h4></div> -->
+        <header>
+          <a href="index.html" class="logo"> Parallel Lines & <strong>Madhubani</strong></a>
+        </header>
+      </div>
+      <div class="col-sm-4">
+        <span >
+        <a class="icon" href="https://www.facebook.com/ParallelLinesMadhubani-102442748891138" ><i class='fab fa-facebook-square'></i></a>
+        <a class="icon" href="https://www.instagram.com/neelima_saraf/"><i class="fab fa-instagram"></i></a>
+      </span>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="col-sm-2 text-dark ">
+        <nav class="navbar ">
+          <div class="list-group list-group-flush container-fluid">
+            <a href="index.html" class="list-group-item list-group-item-action  list-group-item-light"> Home</a>
+            <a href="about.html" class="list-group-item list-group-item-action list-group-item-light"> About</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light" data-bs-toggle="collapse" data-bs-target="#mitems"> My Works</a>
+              <div class="list-group list-group-flush" id="mitems" class="collapse">
+                <a href="fish.html" class="list-group-item list-group-item-action">Madhubani Fish</a>
+                <a href="birds.html" class="list-group-item list-group-item-action">Madhubani Birds</a>
+                <a href="animals.html" class="list-group-item list-group-item-action">Madhubani Animals</a>
+                <a href="god.html" class="list-group-item list-group-item-action">Madhubani God/Goddess</a>
+              </div>
+            <a href="contact.html" class="list-group-item list-group-item-action list-group-item-light">Contact</a>
+          </div>
+        </nav>
+      </div>
+
+
       <div class="col-sm-10">
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="static/images/banner.png" class="img-fluid border border-3 border-black rounded">
+            <p>Madhubani is one of the oldest forms of Indian folk art.  It is said that, on the occasion of Lord Ram and Sita wedding whole Mithilanchal was decorated like a bride and the Madhubani also called as Mithila art was used to decorate the walls.  Often characterized by complex geometrical patterns, these paintings are known for representing ritual content for particular occasions, including festivals, religious rituals, etc.</p>
+            <a href="https://en.wikipedia.org/wiki/Madhubani_art" class="btn btn-outline-danger blockquote-footer">Know More</a>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-12">
             <h3>Some of the famous Madhubani artists.</h3>
@@ -9,19 +65,19 @@
         <div class="row">
             <div class="col-sm-4">
               <div class="card" >
-                <img class="card-img-top" src="../static/images/sita-boubat.jpg" alt="">
+                <img class="card-img-top" src="static/images/sita-boubat.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Sita Devi</h4>
                   <!-- <blockquote class="blockquote"> -->
                   <p class="card-text">Sita Devi, one of the most prominent early Mithila artists and among the first to transfer the traditional art form from the walls of the home to paper and canvas, was a Mahapatra Brahmin from the village of Jitwarpur. </p>
-                  <a href="#" class="btn btn-outline-danger blockquote-footer">From wikipedia</a>
+                  <a href="https://blog.saffronart.com/2013/02/11/sita-devi-a-legendary-mithila-artist/" class="btn btn-outline-danger blockquote-footer">From wikipedia</a>
                 <!-- </blockquote> -->
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="card" >
-                <img class="card-img-top" src="../static/images/mahasundari.jpg" alt="">
+                <img class="card-img-top" src="static/images/mahasundari.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Mahasundari Devi</h4>
                   <p class="card-text">Mahasundari Devi  was an Indian artist and Madhubani painter.She was awarded the Tulsi Samman by the Government of Madhya Pradesh in 1995, and in 2011 she received the Padma Shri award from the Government of India.</p>
@@ -32,7 +88,7 @@
 
             <div class="col-sm-4">
               <div class="card" >
-                <img class="card-img-top" src="../static/images/Dularidevi.jpg" alt="">
+                <img class="card-img-top" src="static/images/Dularidevi.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Dulari Devi</h4>
                   <p class="card-text">Dulari Devi  is an Indian artist and illustrator, working in the Madhubani art tradition. In 2020, she was a recipient of the Padma Shri, a civilian honour granted by the Government of India, for her contributions to art.</p>
@@ -44,7 +100,7 @@
         <div class="row">
             <div class="col-sm-4">
               <div class="card" >
-                <img class="card-img-top" src="../static/images/Bharti_Dayal.jpg" alt="">
+                <img class="card-img-top" src="static/images/Bharti_Dayal.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Bharti Dayal</h4>
                   <p class="card-text">Bharti Dayal Dayal has given a contemporary cast to traditional Madhubani art by using modern media such as acrylic and canvas. She paints with natural, vegetable-based colours.</p>
@@ -55,7 +111,7 @@
 
             <div class="col-sm-4">
               <div class="card" >
-                <img class="card-img-top" src="../static/images/PushpaKUMARI.jpg" alt="">
+                <img class="card-img-top" src="static/images/PushpaKUMARI.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Pushpa Kumari</h4>
                   <p class="card-text">Pushpa Kumari is one of India’s foremost contemporary traditional artists and divides her time between Delhi and her ancestral village of Ranti.</p>
@@ -65,7 +121,7 @@
             </div>
             <div class="col-sm-4">
               <div class="card" >
-                <img class="card-img-top" src="../static/images/malvikaa.jpg" alt="">
+                <img class="card-img-top" src="static/images/malvikaa.jpg" alt="">
                 <div class="card-body">
                   <h4 class="card-title">Malvika Raj</h4>
                   <p class="card-text">Malvika is an Indian artist and fashion designer. She works in the Madhubani style of art. As a Dalit, she has used art to express her experiences with caste-based discrimination in India, and uses traditional techniques to express themes relating to Dalit identity and the Buddhist religion.</p>
@@ -75,4 +131,11 @@
             </div>
         </div>
     </div>
-{% endblock %}
+
+    <div id="footer" class="row container-fluid  border-top border-3 border-danger ">Footer</div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+  </body>
+</html>
